@@ -1,5 +1,7 @@
 # Rails `for_select`
 
+[![Build Status](https://travis-ci.org/ekampp/rails-for_select.svg?branch=master)](https://travis-ci.org/ekampp/rails-for_select)
+
 Simplifies delivering content to a rails form `select_tag` by exposing the `for_select` class-method on any class 
 inheriting from ActiveRecord::Base. 
 
