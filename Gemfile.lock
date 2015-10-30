@@ -1,9 +1,8 @@
 PATH
   remote: .
   specs:
-    rails-for_select (1.0.0)
+    rails-for_select (1.0.1)
       rails (>= 4.2)
-      sqlite3 (~> 1.3)
 
 GEM
   remote: https://rubygems.org/
@@ -123,6 +122,7 @@ PLATFORMS
 DEPENDENCIES
   rails-for_select!
   rspec-rails (~> 3.3)
+  sqlite3 (~> 1.3)
 
 BUNDLED WITH
    1.10.6
