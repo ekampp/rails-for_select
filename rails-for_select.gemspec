@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'rails-for_select'
-  s.version     = '1.0.1'
+  s.version     = '1.0.2'
   s.licenses    = ['MIT']
   s.summary     = "Exposes .for_select for use with Rails forms"
   s.description = "Exposes ActiveRecord::Base.for_select for use with Rails' ActionView::Helpers::FormTagHelper#select_tag"
@@ -8,6 +8,7 @@ Gem::Specification.new do |s|
   s.email       = 'emil@kampp.me'
   s.files       = ["lib/rails/for_select.rb"]
   s.homepage    = 'https://github.com/ekampp/rails-for_select'
+  s.required_ruby_version = '~> 2.2'
 
   s.add_runtime_dependency 'rails', '>= 4.2'
   s.add_development_dependency 'sqlite3', '~> 1.3'
