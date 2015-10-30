@@ -1,6 +1,5 @@
-module ActiveRecord
-  class Base
-    class << self
+module ForSelect
+  module ClassMethods
       # Allow to call #for_select on each class inheriting from ActiveRecord::Base. Will generate a tuples array for use
       # in Rails' form's select fields. It will cache the resulting tuples array.
       #
@@ -20,6 +19,7 @@ module ActiveRecord
           pluck(name, id)
         end
       end
-    end
   end
 end
+
+ActiveRecord::Base.extend(ForSelect::ClassMethods)

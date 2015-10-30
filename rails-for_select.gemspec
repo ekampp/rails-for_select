@@ -1,11 +1,15 @@
 Gem::Specification.new do |s|
   s.name        = 'rails-for_select'
-  s.version     = '0.1.0'
+  s.version     = '1.0.0'
   s.licenses    = ['MIT']
-  s.summary     = "This is an example!"
-  s.description = "Much longer explanation of the example!"
-  s.authors     = ["Ruby Coder"]
-  s.email       = 'rubycoder@example.com'
-  s.files       = ["lib/example.rb"]
-  s.homepage    = 'https://rubygems.org/gems/example'
+  s.summary     = "Exposes .for_select for use with Rails forms"
+  s.description = "Exposes ActiveRecord::Base.for_select for use with Rails' ActionView::Helpers::FormTagHelper#select_tag"
+  s.authors     = ["Emil Kampp"]
+  s.email       = 'emil@kampp.me'
+  s.files       = ["lib/rails/for_select.rb"]
+  s.homepage    = 'https://github.com/ekampp/rails-for_select'
+
+  s.add_runtime_dependency 'rails', '>= 4.2'
+  s.add_runtime_dependency 'sqlite3', '~> 1.3'
+  s.add_development_dependency 'rspec-rails', '~> 3.3'
 end
