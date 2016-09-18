@@ -16,7 +16,12 @@ module ForSelect
       #   GameSystem.for_select(cache_key: :created_on) # => [["name", 1], ["other name", 2], ...]
       def for_select(id: :id, name: :name, cache_key: :updated_at)
         Rails.cache.fetch [self.to_s.tableize, :select, self.maximum(cache_key)] do
-          pluck(name, id)
+          find_each.collect do |record|
+            [
+              record.send(name),
+              record.send(id),
+            ]
+          end
         end
       end
   end

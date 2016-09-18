@@ -12,9 +12,14 @@ ActiveRecord::Base.establish_connection(
 ActiveRecord::Schema.define do
   self.verbose = false
 
-  create_table :users, force: true do |t|
+  create_table :user_names, force: true do |t|
+    t.integer :user_id
     t.string :name
-    t.timestamps null: false # Prepare for Rails 5
+    t.timestamps null: false
+  end
+
+  create_table :users, force: true do |t|
+    t.timestamps null: false
   end
 end
 
