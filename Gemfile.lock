@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails-for_select (1.0.2)
+    rails-for_select (1.0.3)
       nokogiri (~> 1.6.8)
       rails (>= 4.2)
 

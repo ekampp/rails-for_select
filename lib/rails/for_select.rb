@@ -1,3 +1,5 @@
+require 'active_record'
+
 module ForSelect
   module ClassMethods
       # Allow to call #for_select on each class inheriting from ActiveRecord::Base. Will generate a tuples array for use
