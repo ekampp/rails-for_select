@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/ekampp/rails-for_select'
   s.required_ruby_version = '~> 2.2'
 
-  s.add_runtime_dependency 'nokogiri', '~> 1.6.8'
+  s.add_runtime_dependency 'nokogiri', '>= 1.6'
   s.add_runtime_dependency 'rails', '>= 4.2'
   s.add_development_dependency 'sqlite3', '~> 1.3'
   s.add_development_dependency 'rspec-rails', '~> 3.3'
