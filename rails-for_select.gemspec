@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'rails-for_select'
-  s.version     = '1.0.3'
+  s.version     = '1.1.0'
   s.licenses    = ['MIT']
   s.summary     = "Exposes .for_select for use with Rails forms"
   s.description = "Exposes ActiveRecord::Base.for_select for use with Rails' ActionView::Helpers::FormTagHelper#select_tag"
